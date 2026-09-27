@@ -1,0 +1,196 @@
+:root{
+    /*Colores*/
+    --color-darkBlue35: hsl(217, 19%, 35%);
+    --color-darkBlue51: hsl(214, 17%, 51%);
+    --color-blue69: hsl(212, 23%, 69%);
+    --color-blue95:hsl(210, 46%, 95%);
+
+    /*Ancho de las letras*/
+    --font-weights500: 500;
+    --font-weights700: 700;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 ;
+    background-color: var(--color-blue95);
+    font-size: 13px;
+    font-family: "Manrope", sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px 24px;
+    overflow: hidden;
+    
+}
+.margin{
+    margin: 0px 32px;
+    line-height: 1.75;
+}
+
+.imagen-principal{
+    width: 100%;
+    
+}
+.foto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+.shere{
+    display: flex;
+    background-color: var(--color-blue95);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border: none;
+    margin-right: 30px;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.inferior.activo .perfil{
+    display: none;
+}
+.inferior.activo .redes-sociales{
+    display: flex;
+    
+}
+.inferior.activo .shere{
+    background-color: var(--color-darkBlue51);
+}
+.inferior.activo .shere img {
+  filter: brightness(0) invert(1);
+}
+    
+.title, .name{
+    color: var(--color-darkBlue35);
+    font-weight: var(--font-weights700);
+}
+.time{
+    color: var(--color-darkBlue51);
+    font-weight: var(--font-weights500);
+    opacity: 70%;
+}
+.name-time{
+    line-height: 0.5;
+    margin-left: 20px;
+}
+.inferior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.text{
+    color: var(--color-darkBlue51);
+    font-weight: var(--font-weights500);
+}
+.redes-sociales{
+    display: none;
+    flex-direction: row;
+    gap: 20px;
+    background-color: var(--color-darkBlue35);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: start;
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    padding: 10px 0;
+}
+.redes-sociales button{
+    display: flex;
+    border-radius: 50%;
+    border: none;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociales p{
+    margin-left: 30px;
+    color: var(--color-blue69);
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+}
+.facebook{
+    height: 20px;
+    width: 20px;
+    
+}
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-width: 730px; 
+    height: 280px;
+    overflow: visible;
+  }
+  .redes-sociales{
+    position: absolute;
+    bottom: 65px;
+    right: -60px;
+    border-radius: 10px;
+    z-index: 20;
+    width: auto;
+    padding: 15px 30px;
+  }
+  .redes-sociales::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    left: 50%;
+    border-style: solid;
+    border-color: var(--color-darkBlue35) transparent transparent transparent;
+  }
+  .inferior.activo .perfil{
+    display: flex;
+  }
+
+  .imagen-principal {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ 
+  .contenedor-derecho {
+    width: 60%;
+    display: flex;             
+    flex-direction: column;    
+    justify-content: space-between;
+    padding: 32px 0 20px 0;    
+  }
+
+  .contenedor-derecho .margin {
+    margin-top: 0;
+  }
+}
