@@ -27,12 +27,12 @@ Los usuarios deben ser capaces de:
 
 ### Captura de pantalla
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./screenshot.png)
 
 ### Enlaces
 
 
-- Sitio web en vivo: [Ver sitio en vivo](https://your-live-site-url.com)
+- Sitio web en vivo: [Ver sitio en vivo](https://yeiyei98.github.io/article-preview-component/)
 
 ## Mi proceso
 
@@ -70,7 +70,7 @@ En mis próximos proyectos me gustaría seguir profundizando en:
 
 ### Colaboración con IA
 
-- **Herramientas utilizadas**: Gemini
+- **Herramientas utilizadas**: Gemini y copilot
 - **Cómo la utilicé**: La utilicé como un compañero de código para depurar descalces visuales entre layouts (como cambios involuntarios en el alto de la tarjeta), entender a fondo la matemática detrás del centrado absoluto con `left: 50%` y `transform: translateX(-50%)`, y comprender por qué la combinación de bordes de CSS genera un triángulo en pseudoelementos.
 
 ## Autor
